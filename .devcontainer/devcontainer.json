@@ -1,0 +1,26 @@
+{
+  "name": "DevContainerCSharp",
+  "dockerComposeFile": "docker-compose.yml",
+  "service": "devcontainer",
+  "workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "terminal.integrated.profiles.linux": {
+          "zsh": {
+            "path": "/usr/bin/zsh"
+          },
+          "bash": {
+            "path": "/bin/bash"
+          }
+        },
+        "terminal.integrated.defaultProfile.linux": "zsh"
+      },
+      "extensions": []
+    }
+  },
+  "mounts": [
+    "type=bind,source=${env:HOME}/.gitconfig,target=/vscode/.gitconfig"
+  ],
+  "postStartCommand": "dotnet tool install dotnet-script"
+}

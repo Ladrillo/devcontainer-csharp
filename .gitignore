@@ -1,0 +1,69 @@
+# Build directories
+bin/
+obj/
+
+# User-specific files
+*.user
+*.userosscache
+*.suo
+*.sln.docstates
+
+# Rider / VS Code specific files
+.idea/
+.vscode/
+.vscode/*.*   # Uncomment if you don't want shared settings for VS Code
+*.code-workspace
+
+# Visual Studio specific files
+.vs/
+
+# ASP.NET
+appsettings*.json
+!appsettings.json  # Include default appsettings.json
+Secrets/
+
+# Logs and database
+*.log
+*.tlog
+*.pdb
+*.mdf
+*.ldf
+
+# Temporary and cache files
+*.pidb
+*.sln.cache
+*.sqlite
+*.sqlite3
+*.bak
+*.cache
+*.rnd
+.env
+.env.*
+
+# Generated files
+*.dll
+*.exe
+*.so
+*.dylib
+*.class
+
+# Dependency folders
+node_modules/
+bower_components/
+
+# .NET Core project artifacts
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# Coverage and testing
+*.coverage
+*.coveragexml
+*.testsettings
+*.vsmdi
+TestResults/
+
+# Distribution and publish artifacts
+publish/
+wwwroot/
+dist/
