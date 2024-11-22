@@ -21,6 +21,5 @@
   },
   "mounts": [
     "type=bind,source=${env:HOME}/.gitconfig,target=/vscode/.gitconfig"
-  ],
-  "postStartCommand": "dotnet tool install dotnet-script"
+  ]
 }
