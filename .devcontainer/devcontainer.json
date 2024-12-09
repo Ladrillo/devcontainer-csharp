@@ -21,5 +21,6 @@
   },
   "mounts": [
     "type=bind,source=${env:HOME}/.gitconfig,target=/vscode/.gitconfig"
-  ]
+  ],
+  "postCreateCommand": "sudo dotnet workload update && dotnet tool install -g dotnet-script"
 }
